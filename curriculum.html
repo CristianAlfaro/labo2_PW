@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum</title>
+</head>
+<body>
+    <header>
+        <h1 align= "center">Curriculum Vitae</h1>
+    </header> 
+    <form action="index.html" method="POST">
+        <fieldset>
+                
+            <legend><h3>Personal Data</h3></legend>
+            <label>DUI:</label>
+            <input name="Dui" placeholder="048134128" type="text" required/>
+            <label>First name:</label>
+            <input name="firs-name" placeholder="First Name" type="text" required/>
+            <label>Last name:</label>
+            <input name="last-name" placeholder="Last Name" required/>
+            <label for="gender">Genero:</label>
+            <input type="radio" name="gender">Masculino.
+            <input type="radio" name="gender">Femenino.
+
+            <br><br>
+
+            <label>Contact Number:</label>
+            <input name="phone" type="tel" placeholder="7777-7777"> 
+            <label>Birthdate:</label>
+            <input type="date" name="birth" value="1999-09-18"/>
+            <label>Civil Status:</label>
+             <select name="status" required>
+                <option value="sol">Solterito</option>
+                <option value="cas">Casado</option>
+                <option value="uca">Estudiante de la uca</option>
+                <option value="ssj">Estoy mejor solo</option>
+            </select>
+            <code>Image</code>
+            <input type="file">
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+                
+            <legend><h3>Work Experience</h3></legend>
+            <textarea rows="10" cols="221" placeholder="Experience"></textarea>
+                
+        </fieldset>
+
+        <fieldset>
+                
+            <legend><h3>Academy Training</h3></legend>
+            <textarea rows="10" cols="221" placeholder="Academy Training"></textarea>
+                    
+        </fieldset>
+
+        <fieldset>
+                
+            <legend><h3>Further Training</h3></legend>
+    
+            <fieldset>
+                
+                <legend><h3>Programming Languages</h3></legend> <label for="prog">Lenguajes favoritos:</label>
+                <input type="checkbox" name="prog[]" value="java">Java.
+                <input type="checkbox" name="prog[]" value="C#">C#.
+                <input type="checkbox" name="prog[]" value="Python">Python.
+                <input type="checkbox" name="prog[]" value="C++">C++.
+                <input type="checkbox" name="prog[]" value="Ruby">Ruby.
+                  
+            </fieldset>
+
+            <fieldset>
+                
+                    <legend><h3>Web Technologies</h3></legend> <label for="prog">Lenguajes favoritos:</label>
+                    <input type="checkbox" name="web[]" value="HTML5">HTML5.
+                    <input type="checkbox" name="web[]" value="CSS/CSS3">CSS/CSS3.
+                    <input type="checkbox" name="web[]" value="Materialize CSS">Materialize CSS.
+                    <input type="checkbox" name="web[]" value="JavaScript">JavaScript.
+                    <input type="checkbox" name="web[]" value="Node.js">Node.js.
+                    <input type="checkbox" name="web[]" value="Spring MVC">Spring MVC.
+                      
+                </fieldset>
+                        
+        </fieldset>
+        <input type="submit" value="Send">
+        <input type="button" value="Cancel" onclick="location.href='index.html'">
+</body>
+</html>
